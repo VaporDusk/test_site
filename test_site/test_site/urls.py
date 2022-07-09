@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from first_app.views import index
+from first_app.views import index, second_function
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('first_app/', index)
+    path('first_app/', index),
+    path('first_app/second_page/', second_function)
 ]
